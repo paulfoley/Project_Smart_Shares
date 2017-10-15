@@ -1,0 +1,216 @@
+{
+  "contract_name": "Share",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "create",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalSupply",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "balances",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "disable",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "transfer",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_addr",
+          "type": "address"
+        }
+      ],
+      "name": "getBalance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_supply",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "Transfer",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_amount",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "_newSupply",
+          "type": "uint256"
+        }
+      ],
+      "name": "NewShares",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b6040516020806103c9833981016040528080519150505b60008054600160a060020a03191633600160a060020a039081169190911780835560018490551681526002602052604090208054820190555b505b610359806100706000396000f300606060405236156100755763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416630ecaea73811461007a57806318160ddd146100b057806327e235e3146100d55780632f2770db14610106578063a9059cbb1461011b578063f8b2cb4f14610151575b600080fd5b341561008557600080fd5b61009c600160a060020a0360043516602435610182565b604051901515815260200160405180910390f35b34156100bb57600080fd5b6100c361022d565b60405190815260200160405180910390f35b34156100e057600080fd5b6100c3600160a060020a0360043516610233565b60405190815260200160405180910390f35b341561011157600080fd5b610119610245565b005b341561012657600080fd5b61009c600160a060020a0360043516602435610272565b604051901515815260200160405180910390f35b341561015c57600080fd5b6100c3600160a060020a036004351661030e565b60405190815260200160405180910390f35b6000805433600160a060020a0390811691161461019e57600080fd5b6001805483018155600160a060020a0384166000908152600260205260409081902080548501905590547f94ce691358a23d1455a1f34fdc489bab59206cc4a4537e92520adfc28259cf779185918591518084600160a060020a0316600160a060020a03168152602001838152602001828152602001935050505060405180910390a15060015b5b5b92915050565b60015481565b60026020526000908152604090205481565b60005433600160a060020a0390811691161461026057600080fd5b600054600160a060020a0316ff5b5b5b565b33600160a060020a0381166000908152600260205260408120549091908390101561029c57600080fd5b600160a060020a03808216600081815260026020526040808220805488900390559287168082529083902080548701905590917fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef9086905190815260200160405180910390a3600191505b5092915050565b600160a060020a0381166000908152600260205260409020545b9190505600a165627a7a72305820bb99205254ff41aca6108657df2721e7ec69625978af8cfcdc7f4490afdd5ed30029",
+  "networks": {
+    "1508046385929": {
+      "events": {
+        "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "_to",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "Transfer",
+          "type": "event"
+        },
+        "0x94ce691358a23d1455a1f34fdc489bab59206cc4a4537e92520adfc28259cf77": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_amount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "_newSupply",
+              "type": "uint256"
+            }
+          ],
+          "name": "NewShares",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x82c1bd4901dd8d20d3b42d1d309e012ecf64e432",
+      "updated_at": 1508046476791
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1508046476791
+}

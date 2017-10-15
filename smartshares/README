@@ -1,0 +1,42 @@
+npm install
+
+npm install -g truffle
+
+npm install truffle-contracts
+
+you might need other things here react-router, ethereumjs, web3, sold, etc...
+
+npm start
+
+Once, everything is running: In another terminal run
+
+```
+testrpc
+```
+
+Take the first account/private key that shows up in the testrpc console and log into metamask as that user.
+
+In another terminal, compile and deploy truffle
+
+```
+truffle compile
+truffle migrate
+```
+
+Copy the .json file from build to sol
+
+When you create a new shareholder, it will save to Firebase and the shareholder with the newly created Ethereum account number
+
+You can show this from the Firebase UI to prove that we just created it
+
+Then it will also kick off the smart contract and pop open meta mask. Don't touch the gas and just confirm the transaction.
+
+It should complete and the shares should be transferred to the new ethereum account.
+
+```
+node
+var Web3 = require("web3")
+var web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'))
+web3.eth.getBalance("0xE0EC8d2432678d40C012E290c05E9a464e85feff").then(console.log);
+
+```
